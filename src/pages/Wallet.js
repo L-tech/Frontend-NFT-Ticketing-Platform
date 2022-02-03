@@ -27,7 +27,7 @@ function Wallet({ address }) {
       permalink:
         "https://rinkeby.rarible.com/token/0x8f510afccb7a50181dfe95b803443070ded8ba1d:1?tab=history",
       image_url:
-        "https://rarible.mypinata.cloud/ipfs/Qmd8FCbr5eiFcrSzj3PRovG61tVeus3HJzT3B46XXaJmWj",
+        "https://rarible.mypinata.cloud/ipfs/QmUuXqMvJckFhfoEaLFMEfum6roqgrjQedoRuitizw3kwQ",
     };
     return (
       <Link
@@ -99,7 +99,7 @@ function Wallet({ address }) {
             size="120px"
           />
         )}
-        {!loadingTicket &&
+        {!loadingTicket && ticket &&
           createTicketDisplay()}
         {!loadingTicket && !ticket && (
           <Text
