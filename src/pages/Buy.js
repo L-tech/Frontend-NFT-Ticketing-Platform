@@ -42,7 +42,7 @@ function Buy({ connectedContract }) {
       setBuyTxnPending(true);
       const buyTxn =
         await connectedContract.mint({
-          value: `${0.08 * 10 ** 18}`,
+          value: `${0.008 * 10 ** 18}`,
         });
 
       await buyTxn.wait();
@@ -78,7 +78,7 @@ function Buy({ connectedContract }) {
     async () => {
       try {
         const count =
-          await connectedContract.availableTicketCount();
+          await connectedContract.getAvailableTickets();
         setAvailableTicketCount(
           count.toNumber()
         );
@@ -91,7 +91,7 @@ function Buy({ connectedContract }) {
     async () => {
       try {
         const count =
-          await connectedContract.totalTicketCount();
+          await connectedContract.getTotalTickets();
         setTotalTicketCount(
           count.toNumber()
         );
@@ -132,7 +132,7 @@ function Buy({ connectedContract }) {
           totalTicketCount && (
             <Text>
               {availableTicketCount} of{" "}
-              {totalTicketCount} minted!
+              {totalTicketCount} available!
             </Text>
           )}
       </Flex>
