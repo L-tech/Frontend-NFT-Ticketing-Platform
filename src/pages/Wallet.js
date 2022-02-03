@@ -25,7 +25,7 @@ function Wallet({ address }) {
     const ticket = {
       token_id: 1,
       permalink:
-        "https://rinkeby.rarible.com/token/0x8f510afccb7a50181dfe95b803443070ded8ba1d:1?tab=history",
+        "https://rinkeby.rarible.com/token/0xaf0b4cbecacd729c2f4536e55d8e401ed3bd3c36:1?tab=history",
       image_url:
         "https://rarible.mypinata.cloud/ipfs/QmUuXqMvJckFhfoEaLFMEfum6roqgrjQedoRuitizw3kwQ",
     };

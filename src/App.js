@@ -310,6 +310,9 @@ function App() {
               element={
                 <Wallet
                   address={address}
+                  connectedContract={
+                    connectedContract
+                  }
                 />
               }
             />
