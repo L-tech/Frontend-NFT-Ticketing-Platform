@@ -1,4 +1,4 @@
-# NFTix Demo UI
+# ENFT Demo UI
 
 This repository contains the fronted used building a NFT ticketing system 🥚 🤓
 
